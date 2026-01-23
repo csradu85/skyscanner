@@ -12,12 +12,12 @@ protocol UserTokenUseCase {
 }
 
 final class FetchUserTokenUserTokenUseCase: UserTokenUseCase {
-    private let repository : UserTokenRepository
-    
+    private let repository: UserTokenRepository
+
     init(repository: UserTokenRepository) {
         self.repository = repository
     }
-    
+
     func execute() -> AnyPublisher<UserToken, Error> {
         repository.fetchToken()
     }

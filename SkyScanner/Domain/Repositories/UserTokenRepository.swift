@@ -10,4 +10,3 @@ import Combine
 protocol UserTokenRepository {
     func fetchToken() -> AnyPublisher<UserToken, Error>
 }
-

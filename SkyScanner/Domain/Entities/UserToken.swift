@@ -7,10 +7,10 @@
 
 import Foundation
 
-struct UserToken : Identifiable, Equatable {
+struct UserToken: Identifiable, Equatable {
     public let id: UUID
     public let token: String
-    
+
     public init(id: UUID = UUID(), token: String) {
         self.id = id
         self.token = token
